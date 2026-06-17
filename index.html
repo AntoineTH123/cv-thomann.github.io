@@ -8,14 +8,14 @@
 </head>
 <body>
 
-    <div class="container animate-load">
+    <main class="container animate-load">
 
         <header class="header">
             <div class="header-content">
                 <img src="images/photo.jpg.jpeg" alt="Photo de profil" class="profile-pic">
                 <div class="header-text">
                     <h1>THOMANN <span class="accent">Antoine</span></h1>
-                    <h2>Étudiant en BUT Réseaux & Télécommunications</h2>
+                    <h2>Êtudiant en BUT Réseaux & Télécommunications</h2>
                     <p class="tagline">Recherche alternance – Parcours Cybersécurité</p>
                 </div>
             </div>
@@ -23,10 +23,10 @@
         </header>
 
         <section class="infos">
-            <p>📍 Guebwiller / Habsheim</p>
-            <p>📧 <a href="mailto:anthomann68@outlook.fr">anthomann68@outlook.fr</a></p>
-            <p>📞 06 64 11 90 61</p>
-            <p>🌐 <a href="https://github.com/DQDSQ" target="_blank">github.com/DQDSQ</a></p>
+            <div class="info-item">📍 Guebwiller / Habsheim</div>
+            <div class="info-item">📧 <a href="mailto:anthomann68@outlook.fr">anthomann68@outlook.fr</a></div>
+            <div class="info-item">📞 06 64 11 90 61</div>
+            <div class="info-item">🌐 <a href="https://github.com/DQDSQ" target="_blank">github.com/DQDSQ</a></div>
         </section>
 
         <section class="profile">
@@ -42,19 +42,19 @@
         
         <section>
             <h3><span class="accent">#</span> Expérience Professionnelle</h3>
-            <div class="cv-card project-item">
+            <div class="cv-card">
                 <div class="exp-header">
                     <strong class="exp-title">Stage chez Origin Info System</strong>
                     <span class="date">Novembre 2021</span>
                 </div>
                 <ul class="list-design">
-                    <li>Initialisation / Réinitialisations complètes d'ordinateurs.</li>
-                    <li>Soutien opérationnel aux équipes de vente d'équipements informatiques.</li> 
+                    <li>Initialisation / Réinitialisations d'ordinateurs.</li>
+                    <li>Soutien opérationnel aux équipes de vente d'équipement informatique.</li> 
                 </ul>
-                <p class="company">
-                    <strong>Entreprise :</strong>
+                <p class="company" style="margin-top: 15px; font-size: 0.95rem;">
+                    <strong>Site web de l'entreprise -</strong>
                     <a href="https://www.origin.fr/" target="_blank" class="company-link">
-                        Visiter le site officiel 🔗
+                        Visiter le site web 🔗
                     </a>
                 </p>
             </div>
@@ -64,11 +64,13 @@
             <h3><span class="accent">#</span> Formation</h3>
             <div class="cv-card">
                 <ul class="list-design">
-                    <li style="margin-bottom: 15px;">
-                        <strong>BUT Réseaux & Télécommunications</strong> – IUT du Grillenbreit Colmar <span class="date-badge">2025 - 2028</span>
+                    <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <span><strong>BUT Réseaux & Télécommunications</strong> – IUT du Grillenbreit Colmar</span>
+                        <span class="date">2025 - 2028</span>
                     </li>
-                    <li>
-                        <strong>Baccalauréat Technologique STI2D</strong> – Lycée Théodore Deck <span class="date-badge">Obtenu en 2025</span>
+                    <li style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <span><strong>Baccalauréat Technologique STI2D</strong> – Lycée Théodore Deck</span>
+                        <span class="date">Obtenu en 2025</span>
                     </li>
                 </ul>
             </div>
@@ -91,17 +93,25 @@
             <h3><span class="accent">#</span> Projets</h3>
             <div class="project-list-grid">
                 <div class="cv-card project-item">
-                    <strong>Scripts Python – BUT R&T</strong>
-                    <p class="project-sub-desc">Exercices de logique algorithmique, structures de boucles et conditions.</p>
-                    <a href="https://github.com/DQDSQ/TP1_AT" target="_blank" class="company-link">Dépôt GitHub ↗</a>
+                    <div>
+                        <strong style="font-size: 1.1em; color: var(--text-main);">Scripts Python – BUT R&T</strong>
+                        <p class="project-sub-desc">Exercices de logique algorithmique, structures de boucles et conditions.</p>
+                    </div>
+                    <a href="https://github.com/DQDSQ/TP1_AT" target="_blank" class="company-link" style="font-size: 0.9rem; margin-top: 10px; display: inline-block;">Voir le dépôt GitHub ↗</a>
                 </div>
+                
                 <div class="cv-card project-item">
-                    <strong>Analyse et reporting de stockage disque</strong>
-                    <p class="project-sub-desc">Outil d’analyse récursive des fichiers volumineux et de visualisation graphique de l'espace (Python, PowerShell, PyQt).</p>
+                    <div>
+                        <strong style="font-size: 1.1em; color: var(--text-main);">Analyse & Reporting de stockage</strong>
+                        <p class="project-sub-desc">Outil d’analyse des fichiers volumineux et de visualisation graphique de l’occupation disque (Python, PowerShell, PyQt).</p>
+                    </div>
                 </div>
+                
                 <div class="cv-card project-item">
-                    <strong>Mise en place d’un réseau d’entreprise multi-VLAN</strong>
-                    <p class="project-sub-desc">Configuration d’une architecture virtuelle complète : VLAN natif tagué, routage inter-VLAN et services DHCP (EVE-NG, Cisco).</p>
+                    <div>
+                        <strong style="font-size: 1.1em; color: var(--text-main);">Réseau d’entreprise multi-VLAN</strong>
+                        <p class="project-sub-desc">Configuration d’un réseau local complet et virtualisé avec VLANs, routage inter-VLAN et serveurs DHCP (EVE-NG, Cisco).</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -121,7 +131,7 @@
                 <h3><span class="accent">#</span> Centres d’intérêt</h3>
                 <div class="cv-card">
                     <ul class="list-design">
-                        <li>Cybersécurité (Pratique Root Me / TryHackMe)</li>
+                        <li>Cybersécurité (Root Me / TryHackMe)</li>
                         <li>Échecs / Boxe anglaise</li>
                     </ul>
                 </div>
@@ -132,6 +142,6 @@
             <p>© 2026 - THOMANN Antoine</p>
         </footer>
 
-    </div> 
+    </main> 
 </body>
 </html>
